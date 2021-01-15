@@ -1,0 +1,52 @@
+
+$flex-direction:column;
+$display:flex;
+$maincolor:red;
+$back:white;
+body {
+    display: $display;
+    flex-direction: $flex-direction;
+    min-height: 100vh;
+    text-align: center;
+    color: $maincolor;
+    background-color: $back;
+    
+}
+
+main {
+    flex: 2;
+    
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+#app{
+    text-align: center;
+}
+
+#date{
+    letter-spacing: 5px;
+    font-family: italic;
+}
+/* unvisited link */
+#generate:link {
+    color: green;
+  }
+  
+  /* visited link */
+  #generate:visited {
+    color: green;
+  }
+  
+  /* mouse over link */
+  #generate:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  #generate:active {
+    color: yellow;
+  }

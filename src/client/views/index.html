@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Travel App</title>
+
+</head>
+
+<body>
+  <div id = "app">
+    <div class ="holder headline">
+      Travel App
+    </div>
+
+    <br>
+
+    <div class ="holder city">
+      <label for="city">Enter destination here</label>
+      <input type="text" id="city" placeholder="City name">
+    </div>
+
+    <br>
+    
+    <div class ="holder capital">
+      <label for="city">Enter Capital city</label>
+      <input type="text" id="capitalCity" placeholder="Capital name">
+    </div>
+
+    <br>
+
+    <div class ="holder start-date">
+      <label for="start-date">Start Date</label>
+      <input type="date" id="start-date" name="trip-start" value="2020-07-22"
+      min="2020-01-01" max="2020-12-31">
+    </div>
+
+    <br>
+
+    <div class ="holder end-date">
+      <label for="end-date">End Date</label>
+      <input type="date" id="end-date" name="trip-start" min="2020-01-01" max="2021-06-31" value="2021-07-22">
+    </div>
+
+    <br>
+
+    <div class ="holder feel">
+      <button id="generate" type = "submit"> Generate </button>
+    </div>
+
+    <br>
+  <div class ="holder entry">
+    <div class = "title">Most Recent Entry</div>
+   <div id = "entryHolder">
+    <div id = "date"></div> 
+   <div id = "longitude"></div>
+   <div id = "latitude"></div>
+   <div id = "weather"></div>
+   <div id = "country"></div>
+   <div id = "Capital"></div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/service-worker.js');
+      });
+    }
+    </script>
+    
+  
+
+ 
+    
+</body>
+</html>
